@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            ""}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            ""}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
@@ -41,6 +41,12 @@
             ""}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("", 6);
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("", 7);
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("", 8);
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("", 9);
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("", 10);
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("", 11);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrocoForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.trocoTextBox = new System.Windows.Forms.TextBox();
@@ -82,7 +88,6 @@
             this.trocoTextBox.ReadOnly = true;
             this.trocoTextBox.Size = new System.Drawing.Size(137, 20);
             this.trocoTextBox.TabIndex = 3;
-            
             // 
             // valorPagoTextBox
             // 
@@ -157,13 +162,20 @@
             listViewItem3,
             listViewItem4,
             listViewItem5,
-            listViewItem6});
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
             this.moedasListView.LargeImageList = this.moedasImageList;
             this.moedasListView.Location = new System.Drawing.Point(3, 16);
             this.moedasListView.Name = "moedasListView";
             this.moedasListView.Size = new System.Drawing.Size(538, 350);
             this.moedasListView.TabIndex = 2;
             this.moedasListView.UseCompatibleStateImageBehavior = false;
+            this.moedasListView.SelectedIndexChanged += new System.EventHandler(this.moedasListView_SelectedIndexChanged);
             // 
             // moedasImageList
             // 
@@ -175,6 +187,12 @@
             this.moedasImageList.Images.SetKeyName(3, "25.png");
             this.moedasImageList.Images.SetKeyName(4, "50.png");
             this.moedasImageList.Images.SetKeyName(5, "100.png");
+            this.moedasImageList.Images.SetKeyName(6, "2conto.PNG");
+            this.moedasImageList.Images.SetKeyName(7, "5conto.PNG");
+            this.moedasImageList.Images.SetKeyName(8, "10conto.PNG");
+            this.moedasImageList.Images.SetKeyName(9, "20conto.PNG");
+            this.moedasImageList.Images.SetKeyName(10, "50conto.PNG");
+            this.moedasImageList.Images.SetKeyName(11, "100conto.PNG");
             // 
             // TrocoForm
             // 
