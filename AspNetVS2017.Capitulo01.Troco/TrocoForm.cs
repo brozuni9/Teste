@@ -17,7 +17,8 @@ namespace AspNetVS2017.Capitulo01.Troco
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void calcularButton_Click(object sender, EventArgs e)
         {
 
         }
